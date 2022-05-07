@@ -3,7 +3,7 @@
     returnTokenMaxSupply returnTokenMaxSupply
     (let
       (
-        (newTokenMaxSupply (unwrap! (contract-call? .reat-token get-max-supply) u0))
+        (newTokenMaxSupply (unwrap! (contract-call? .token get-max-supply) u0))
       )
       (var-set tokenMaxSupply (some newTokenMaxSupply))
       newTokenMaxSupply
