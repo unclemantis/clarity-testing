@@ -49,6 +49,6 @@
     )
 )
 
-(define-read-only (get-active-loans (start uint))
-    (map get-loan (uint-list-slice (var-get activeDataIds) start))
+(define-read-only (get-active-data (start uint))
+    (map get-data (uint-list-slice (var-get activeDataIds) start))
 )
