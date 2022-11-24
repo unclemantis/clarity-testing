@@ -19,7 +19,7 @@
 )
 
 (define-private (uint-list-slice (uintList (list 2500 uint)) (start uint))
-    (get accumulator (fold uint-value-list-slice-iterator uintList {accumulator: (list ), index: u0, start: start}))
+    (get accumulator (fold uint-list-slice-iterator uintList {accumulator: (list ), index: u0, start: start}))
 )
 
 (define-private (uint-list-slice-iterator (value uint) (state {accumulator: (list 10 uint), index: uint, start: uint}))
